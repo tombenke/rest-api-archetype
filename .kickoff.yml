@@ -1,0 +1,62 @@
+# This is a configuration file for the kickoff utility
+description: |
+    This is a REST API archetype
+    New REST API project can be generated from this archetype by the
+    [kickoff](https://github.com/tombenke/kickoff) utility.
+
+welcome: >
+
+    You are generating a REST API project
+
+postscript: >
+
+    Next steps:
+
+     - install dependencies
+
+        cd <rest-api-project>
+        npm install
+
+     - Add endpoints to the config.yml of the REST API project
+
+     - Modify the generated endpoint descriptors and the corresponding fixtures and schemas
+
+     - Run the tests in order to verify the correctness of the endpoint descriptions
+
+        npm test
+
+questions:
+    - 
+        type: input
+        name: package_name
+        message: The name of the project
+        default: new-rest-api
+
+    -
+        type: input
+        name: package_description
+        message: The short description of the project
+        default: This is a REST API project
+
+    -
+        type: input
+        name: author_full_name
+        message: The full name of the author
+        default: Anonymous
+
+    -
+        type: input
+        name: author_email
+        message: The email address of the author
+        default: anonymous@myco.com
+
+    -
+        type: input
+        name: author_github_account
+        message: The github account of the author
+        default: anonymous
+
+converters:
+    handlebars:
+        - package.json
+        - README.md

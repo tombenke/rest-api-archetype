@@ -1,0 +1,7 @@
+# Configuration file to generate test-ui-ui via kickoff
+# kickoff -a test-rest-api.yml -f ~/topics/rest-api-archetype/ -d test-rest-api
+package_name: test-rest-api
+package_description: The implementation of a REST API
+author_full_name: Test Author
+author_email: testauthor@gmail.com
+author_github_account: testauthor

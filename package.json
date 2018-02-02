@@ -1,0 +1,49 @@
+{
+  "name": "{{package_name}}",
+  "description": "{{package_description}}",
+  "version": "1.0.0",
+  "tags": [
+    "rest",
+    "api",
+    "web"
+  ],
+  "author": {
+    "name": "{{author_full_name}}",
+    "email": "{{author_email}}"
+  },
+  "bugs": {
+    "url": "https://github.com/{{author_github_account}}/{{package_name}}/issues"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/{{author_github_account}}/{{package_name}}",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/{{author_github_account}}/{{package_name}}.git"
+  },
+  "main": "lib/index",
+  "dependencies": {
+    "rest-tool-common": "1.0.0"
+  },
+  "devDependencies": {
+    "pre-push": "^0.1.1",
+    "coveralls": "^2.11.15",
+    "cross-env": "^2.x.x",
+    "eslint": "^3.10.2",
+    "expect": "^1.6.0",
+    "istanbul": "1.0.0-alpha.2",
+    "mocha": "^2.x.x",
+    "mocha-lcov-reporter": "^1.2.0",
+    "superagent": "^3.1.0"
+  },
+  "scripts": {
+    "lint": "eslint lib/**.js",
+    "test": "cross-env NODE_ENV=test mocha --recursive 'lib/**/*.spec.js'",
+    "test:watch": "npm test -- --watch",
+    "coverage": "NODE_ENV=test istanbul cover _mocha -- recursive --timeout 15000 'lib/**/*.spec.js'",
+    "coveralls": "NODE_ENV=test istanbul cover _mocha --report lcovonly -- recursive --timeout 15000 'lib/**/*.spec.js' -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
+  },
+  "pre-push": [
+    "lint",
+    "test"
+  ]
+}
