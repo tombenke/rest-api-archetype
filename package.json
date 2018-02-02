@@ -22,7 +22,7 @@
   },
   "main": "lib/index",
   "dependencies": {
-    "rest-tool-common": "1.0.0"
+    "rest-tool-common": "2.0.3"
   },
   "devDependencies": {
     "pre-push": "^0.1.1",

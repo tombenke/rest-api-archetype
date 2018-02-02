@@ -9,7 +9,6 @@
 The `lib` folder contains:
 
 - the `services` folder, which contains the service definition subfolders,
-- the `config.yml` file, which lists the available services via the paths to their folder,
 - the `index.js` module definition file.
 
 ### Service endpoints
@@ -51,8 +50,6 @@ To create a new endpoint, execute the following command in the root folder othe 
     Converting service.yml as Handlebars template
 
     Next steps:
-
-     - Add your endpoint to the config.yml of the REST API project
 
      - Modify the generated endpoint descriptor and the corresponding fixtures and schemas
 
@@ -140,9 +137,6 @@ command.
     - Verify that the referred mock files and schema files are exist.
     - Verify the integrity of the services (schema).
     - Verify the internal functions working.
-
-- Eliminate `config.yml`.
-  Traverse the `services` folder and automatically load the endpoint descriptors, detecting their names.
 
 ## References
 - [rest-tool documentation pages](http://tombenke.github.io/rest-tool/docs/documentation.html)
