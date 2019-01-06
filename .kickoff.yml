@@ -58,5 +58,4 @@ questions:
 
 converters:
     handlebars:
-        - package.json
-        - README.md
+        - .kickoff.sed

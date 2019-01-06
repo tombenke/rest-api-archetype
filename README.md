@@ -1,8 +1,8 @@
-# {{package_name}}
+# rest-api-archetype
 
 ## About
 
-{{package_description}}
+This is a project archetype for REST API specifications
 
 ## Artifacts
 
