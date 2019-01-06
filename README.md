@@ -1,5 +1,11 @@
 # rest-api-archetype
 
+[![experimental](http://badges.github.io/stability-badges/dist/experimental.svg)](http://github.com/badges/stability-badges)
+[![npm version][npm-badge]][npm-url]
+[![Build Status][travis-badge]][travis-url]
+[![Coveralls][BadgeCoveralls]][Coveralls]
+
+
 ## About
 
 This is a project archetype for REST API specifications
@@ -145,3 +151,11 @@ command.
 - [COLLECTION endpoint archetype](https://github.com/tombenke/rest-endpoint-collection-archetype)
 - [RESOURCE endpoint archetype](https://github.com/tombenke/rest-endpoint-resource-archetype)
 - [OPERATION endpoint archetype](https://github.com/tombenke/rest-endpoint-operation-archetype)
+
+[npm-badge]: https://badge.fury.io/js/rest-api-archetype.svg
+[npm-url]: https://badge.fury.io/js/rest-api-archetype
+[travis-badge]: https://api.travis-ci.org/tombenke/rest-api-archetype.svg
+[travis-url]: https://travis-ci.org/tombenke/rest-api-archetype
+[Coveralls]: https://coveralls.io/github/tombenke/rest-api-archetype?branch=master
+[BadgeCoveralls]: https://coveralls.io/repos/github/tombenke/rest-api-archetype/badge.svg?branch=master
+
