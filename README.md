@@ -129,9 +129,9 @@ command.
             })
         })
 
-## todos
+## Todos
 
-- add test
+- Add test
     - Verify that the services properly loaded.
     - Verify that every endpoint definition exist, that are defined in config.yml.
     - Verify that the referred mock files and schema files are exist.
