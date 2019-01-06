@@ -11,7 +11,7 @@ pwd
 sh ./.kickoff.sh
 rm node_modules/* -fr
 npm install
-npm run build
+#npm run build
 npm run test
 npm run lint
 cd $cwd
